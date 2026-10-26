@@ -1,0 +1,10 @@
+﻿{
+  "name": "live-polling",
+  "version": "1.0.0",
+  "private": true,
+  "description": "QR-based live single-choice polling for small events",
+  "main": "server.js",
+  "scripts": { "start": "node server.js", "dev": "node --watch server.js" },
+  "engines": { "node": ">=20" },
+  "dependencies": { "express": "^5.1.0", "qrcode": "^1.5.4", "socket.io": "^4.8.1" }
+}

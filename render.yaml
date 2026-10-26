@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: live-polling
+    runtime: node
+    plan: 0.5c-512mb
+    buildCommand: npm install
+    startCommand: npm start
+    disk:
+      name: poll-responses
+      mountPath: /opt/render/project/src/data
+      sizeGB: 1
